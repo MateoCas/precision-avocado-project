@@ -145,3 +145,14 @@ Mateo
 Ingeniero Agropecuario | Data Analytics | Agricultura de Precisión
 
 Proyecto enfocado en aplicar ciencia de datos al sector agropecuario.
+
+
+
+
+### Producción vs Rendimiento
+
+![Producción vs Rendimiento](reports/produccion_vs_rendimiento.png)
+
+No se identifica un patrón lineal claro entre rendimiento y producción total, lo que sugiere una baja capacidad explicativa del rendimiento como predictor individual.
+
+---
