@@ -1,0 +1,147 @@
+# 🥑 Precision Avocado Project
+
+## Determinantes de la producción de aguacate en Antioquia
+
+### Descripción del proyecto
+
+Este proyecto analiza los principales factores asociados a la producción de aguacate en municipios de Antioquia, utilizando datos agrícolas oficiales y herramientas de análisis de datos con Python.
+
+El objetivo principal es identificar si la producción total está más relacionada con la expansión del área cosechada o con la eficiencia productiva medida a través del rendimiento por hectárea.
+
+Este proyecto busca aplicar análisis de datos y Machine Learning a problemas reales del sector agropecuario, conectando ciencia de datos con agricultura de precisión.
+
+---
+
+## Objetivo
+
+Evaluar qué variables explican mejor la producción total de aguacate en Antioquia mediante análisis exploratorio de datos, visualización y modelos de regresión lineal.
+
+---
+
+## Dataset
+
+Fuente de datos:
+
+* Agronet
+* Estadísticas agrícolas municipales
+
+Variables principales utilizadas:
+
+* Año
+* Departamento
+* Municipio
+* Producto
+* Área Sembrada
+* Área Cosechada
+* Producción
+* Rendimiento
+* Ciclo productivo
+
+---
+
+## Herramientas utilizadas
+
+* Python
+* Pandas
+* Matplotlib
+* Scikit-learn
+* Jupyter Notebook
+* Git
+* GitHub
+
+---
+
+## Principales hallazgos
+
+### 1. Alta concentración territorial de la producción
+
+Municipios como Urrao, Sonsón y Abejorral lideran la producción total de aguacate en Antioquia.
+
+Se identifica una fuerte concentración productiva en el Suroeste y Oriente Antioqueño.
+
+---
+
+### 2. Producción total ≠ mayor eficiencia
+
+Municipios con mayor volumen de producción no necesariamente presentan los mejores niveles de rendimiento.
+
+Por ejemplo, Caramanta aparece como líder en rendimiento promedio, aunque no lidera en producción total.
+
+---
+
+### 3. El área cosechada explica mejor la producción
+
+Se encontró una fuerte correlación entre Producción y Área Cosechada.
+
+Modelo de regresión lineal:
+
+* Área Cosechada → R² = 0.81
+
+Esto indica que gran parte de la producción está asociada a la escala productiva.
+
+---
+
+### 4. El rendimiento por sí solo no explica la producción
+
+Modelo de regresión lineal:
+
+* Rendimiento → R² negativo
+
+Esto indica que el rendimiento no funciona como predictor lineal robusto de la producción total cuando se evalúa de forma aislada.
+
+---
+
+### 5. Modelo combinado mejora ligeramente
+
+Modelo con:
+
+* Área Cosechada
+* Rendimiento
+
+Resultado:
+
+* R² = 0.85
+
+Esto sugiere que el rendimiento aporta información complementaria, aunque el principal factor explicativo sigue siendo el área cosechada.
+
+---
+
+## Estructura del proyecto
+
+```text
+precision-avocado-project/
+│
+├── data/
+│   └── raw/
+│
+├── notebooks/
+│   └── 01_data_cleaning.ipynb
+│
+├── src/
+│
+├── reports/
+│
+├── README.md
+│
+└── requirements.txt
+```
+
+---
+
+## Próximos pasos
+
+* Visualizaciones avanzadas
+* Modelos multivariados
+* Random Forest Regressor
+* Comparación entre municipios
+* Dashboard interactivo
+* Aplicación de SQL para análisis complementario
+
+---
+
+## Autor
+
+Mateo
+Ingeniero Agropecuario | Data Analytics | Agricultura de Precisión
+
+Proyecto enfocado en aplicar ciencia de datos al sector agropecuario.
